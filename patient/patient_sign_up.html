@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style_signup.css">
+    <link rel="stylesheet" href="../style_signup.css">
 </head>
 
 <body>
@@ -20,24 +20,6 @@
                     <label class="lbl" for="Name">Full Name</label>
                     <input class="inp1" type="text" name="name" required id="name">
                 </div>
-                <div class="cont2">
-                    <label class="lbl" for="address">Clinic Address</label>
-                    <input class="inp1" type="text" name="address" required id="addr">
-                </div>
-                <div class="cont2">
-                    <label class="lbl" for="specilization">Specilization</label>
-                    <select name="spec" class="inp3" required name="specilization" id="specilization">
-                        <option value="">Select Specialization</option>
-                        <option value="Gynecologist/Obstetrician">Gynecologist/Obstetrician</option>
-                        <option value="General Physician">General Physician</option>
-                        <option value="Dermatologist">Dermatologist</option>
-                        <option value="Homeopathi">Homeopathi</option>
-                        <option value="Ayurveda">Ayurveda</option>
-                        <option value="Dentist">Dentist</option>
-                        <option value="ENT Specialist">ENT Specialist</option>
-                        <option value="Bone Specialist">Bone Specialist</option>
-                    </select>
-                </div>
 
                 <div class="cont2">
                     <label class="lbl gen" for="gender">Gender</label>
@@ -45,8 +27,12 @@
                     <input class="gen" type="radio" name="gender" id="female" value="female"> Female
                 </div>
                 <div class="cont2">
+                    <label class="lbl" for="address">Address</label>
+                    <input class="inp1" type="text" name="address" required id="addr">
+                </div>
+                <div class="cont2">
                     <label class="lbl" for="usrname">Email</label>
-                    <input class="inp1" type="email" name="email" required id="email" onBlur="userAvailability()">
+                    <input class="inp1" type="email" name="email" required id="email">
                     <span id="user-availability-status1" style="font-size:12px;"></span>
                 </div>
                 <div class="cont2">
@@ -61,17 +47,13 @@
                     <label class="lbl" for="password">Confirm Password</label>
                     <input class="inp2" type="password" name="confirmpassword" required id="pass">
                 </div>
-                <div class="cont2">
-                    <label class="lbl" for="city">Consultancy Fee</label>
-                    <input class="inp1" type="text" name="fee" required id="city">
-                </div>
             </fieldset>
             <div class="signin">
                 <button class="btn1" name="submit" type="submit">Sign Up</button>
             </div>
             <hr id="wrapper">
             <div class="target1">
-                <p class="signup">Already have a Account?! <a href="./DocLogin.php" class="href2">&nbsp; SignIn</a></p>
+                <p class="signup">Already have a Account?! <a href="#" class="href2">&nbsp; SignIn</a></p>
                 <p class="footer">© PatDoc 2022. All rights reserved</p>
             </div>
         </form>
