@@ -1,3 +1,21 @@
+<?php
+include('..\include\config.php');
+if(isset($_POST['submit']))
+{
+$fname=$_POST['name'];
+$address=$_POST['address'];
+$gender=$_POST['gender'];
+$email=$_POST['email'];
+$phone=$_POST['phno'];
+$password=SHA1($_POST['password']);
+$query=mysqli_query($con,"insert into patient_user(fullname,address,gender,email,phone,password) values('$fname','$address','$gender','$email','$phone','$password')");
+if($query)
+{
+	echo "<script>alert('Successfully Registered. You can login now');</script>";
+
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
