@@ -1,3 +1,24 @@
+<?php
+include('..\include\config.php');
+if(isset($_POST['submit']))
+{
+$fname=$_POST['name'];
+$address=$_POST['address'];
+$specilization=$_POST['spec'];
+$fee=$_POST['fee'];
+$gender=$_POST['gender'];
+$email=$_POST['email'];
+$phone=$_POST['phno'];
+$password=SHA1($_POST['password']);
+$query=mysqli_query($con,"insert into doctor_user(doctorname,address,specilization,fee,gender,Email,phone,password) values('$fname','$address','$specilization','$fee','$gender','$email','$phone','$password')");
+if($query)
+{
+	echo "<script>alert('Successfully Registered. You can login now');</script>";
+	//header('location:PatLogin.php');
+}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
