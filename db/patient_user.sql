@@ -43,3 +43,17 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+DROP TABLE IF EXISTS `doctor_user`;
+CREATE TABLE IF NOT EXISTS `doctor_user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `specilization` varchar(255) DEFAULT NULL,
+  `doctorName` varchar(255) DEFAULT NULL,
+  `address` longtext,
+  `fee` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `phone` bigint DEFAULT NULL,
+  `Email` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `gender` varchar(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
