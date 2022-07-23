@@ -1,3 +1,26 @@
+<?php
+include("..\include\config.php");
+if(isset($_POST['submit']))
+{
+$ret=mysqli_query($con,"SELECT * FROM doctor_user WHERE email='".$_POST['username']."' and password='".SHA1($_POST['password'])."'");
+$num=mysqli_fetch_array($ret);
+if($num>0)
+{
+$extra="Logged In";
+
+$host=$_SERVER['HTTP_HOST'];
+$uip=$_SERVER['REMOTE_ADDR'];
+$uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
+header("location:http://$host$uri/$extra");
+exit();
+} else {
+  ?>
+  <script>alert("Wrong password or email")</script>
+  <?php
+}
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +28,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign In</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
