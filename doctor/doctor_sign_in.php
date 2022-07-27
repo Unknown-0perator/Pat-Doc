@@ -6,7 +6,7 @@ $ret=mysqli_query($con,"SELECT * FROM doctor_user WHERE email='".$_POST['usernam
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {
-$extra="Logged In";
+$extra="doctor_dashboard.php";
 
 $host=$_SERVER['HTTP_HOST'];
 $uip=$_SERVER['REMOTE_ADDR'];

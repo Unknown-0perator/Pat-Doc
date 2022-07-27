@@ -23,7 +23,7 @@
                 <a class="navbar-brand" href="#">Pat-Doc</a>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Dashboard</a>
+                        <a class="nav-link" href="doctor_dashboard.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
