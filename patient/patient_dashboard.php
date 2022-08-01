@@ -16,7 +16,7 @@ check_login();
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style_dashboard.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
 <header>
