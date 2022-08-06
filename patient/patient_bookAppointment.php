@@ -66,14 +66,24 @@ $query=mysqli_query($con,"INSERT into appointment(doctorSpecialization,doctorId,
   <title>Book Appointment</title>
 
 
-  <!-- CDN Links -->
-  <link rel="icon" type="image/gif" href="../vendor/image/Icon.png">
+  <!-- JQuery CND Links -->
+
   <script src="../vendor/js/jquery-3.5.1.js"></script>
-   <script src="../vendor/js/bootstrap.js"></script>
-   <link rel="stylesheet" href="../vendor/css/bootstrap.css">
-   <link rel="stylesheet" href="../vendor/css/Style5.css">
-   <link rel="stylesheet" href="../vendor/fontawesome/all.css">
+
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!--Fontawesome CDN link-->
+    <script src="https://kit.fontawesome.com/bdcc9ca60b.js" crossorigin="anonymous"></script>
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="../style_dashboard.css">
+   
+  
    <script>
+    
    function enable_text(status)
 {
 status=!status;	

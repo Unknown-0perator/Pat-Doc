@@ -27,10 +27,20 @@ $_SESSION['msg1']="Old Password not match !!";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patient Login</title>
-  <link rel="icon" type="image/gif" href="../vendor/image/Icon.png">
-  <link rel="stylesheet" href="../vendor/css/Style1.css">
-  <script src="../vendor/js/jquery-3.5.1.js"></script>
-  <script src="../vendor/js/bootstrap.js"></script>
+ <!-- JQuery CND Links -->
+
+ <script src="../vendor/js/jquery-3.5.1.js"></script>
+
+<!--Bootstrap CDN link-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<!--Fontawesome CDN link-->
+<script src="https://kit.fontawesome.com/bdcc9ca60b.js" crossorigin="anonymous"></script>
+<!--StyleSheet-->
+<link rel="stylesheet" href="../style_dashboard.css">
   
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
