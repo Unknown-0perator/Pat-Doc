@@ -63,7 +63,7 @@ check_login();
             <div class="card-body">
               <h5 class="card-title">Book My Appointment &nbsp;&nbsp;<i class="far fa-calendar-check fa-2x"></i></h5>
 
-              <a href="./BookAppointment.php" class="btn btn-light">Book Appointment</a>
+              <a href="./patient_bookAppointment.php" class="btn btn-light">Book Appointment</a>
             </div>
           </div>
         </div>
