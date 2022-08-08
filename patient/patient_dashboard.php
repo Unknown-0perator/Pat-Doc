@@ -72,7 +72,7 @@ check_login();
             <div class="card-body">
               <h5 class="card-title">My Medical History &nbsp;&nbsp;<i class="fas fa-notes-medical fa-2x"></i></h5>
 
-              <a href="./History.php" class="btn btn-light">Medical History</a>
+              <a href="./patient_appointment.php" class="btn btn-light">Medical History</a>
             </div>
           </div>
         </div>
