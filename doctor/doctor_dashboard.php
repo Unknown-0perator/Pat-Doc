@@ -82,7 +82,7 @@
                             <h5 class="card-title">Know more about Pills &nbsp;&nbsp;<i class="fas fa-search fa-2x"></i>
                             </h5>
 
-                            <a href="#" class="btn btn-dark">Pill Identifier</a>
+                            <a href="doctor_pillIdentifier.html" class="btn btn-dark">Pill Identifier</a>
                         </div>
                     </div>
                 </div>
