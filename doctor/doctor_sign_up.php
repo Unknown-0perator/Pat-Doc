@@ -28,6 +28,18 @@ if($query)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style_signup.css">
+    <script type="text/javascript">
+  function valid()
+                  {
+                    if(document.registration.password.value!= document.registration.confirmpassword.value)
+                      {
+                        alert("Password and Confirm Password Field do not match  !!");
+                          document.registration.confirmpassword.focus();
+                            return false;
+                      }
+                    return true;
+                  }
+</script>
 </head>
 
 <body>
@@ -97,6 +109,21 @@ if($query)
             </div>
         </form>
     </main>
+    <script>
+        function userAvailability(){
+            $("#loaderIcon").show();
+jQuery.ajax({
+url: "check_availability.php",
+data:'email='+$("#email").val(),
+type: "POST",
+success:function(data){
+$("#user-availability-status1").html(data);
+$("#loaderIcon").hide();
+},
+error:function (){}
+});
+        }
+    </script>
 </body>
 
 </html>
