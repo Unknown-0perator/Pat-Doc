@@ -29,7 +29,7 @@
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-primary">Sign Out</button>
+                        <button class="btn btn-primary" href="doctor_sign_out.php">Sign Out</button>
                     </li>
                 </ul>
             </div>
