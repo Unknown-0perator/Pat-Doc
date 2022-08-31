@@ -154,7 +154,13 @@ $data=mysqli_fetch_array($sqlDetial);
                                     </div>
 
                                     <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600"></h6>
-                               
+                                <div class="row">
+                                  
+                                    <div>
+                                   
+                                    <a href="./patient_doctorRate.php?doctorId=<?php echo $dId ?>&userId=<?php echo $_SESSION['id']?>" class="btn btn-success">Review</a>
+                                    </div>
+                                </div>
                                  
                                 </div>
                           
