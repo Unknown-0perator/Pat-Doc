@@ -26,14 +26,14 @@ check_login();
             <span class="navbar-brand h1 ">PatDoc</span>
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./Dashboard.php">Dashboard</a>
+                    <a class="nav-link" href="./patient_dashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./Rewards.html">Rewards</a>
+                <a class="nav-link" href="">Rewards</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                    <a class="btn btn-secondary" href="./logout.php">Logout</a>
+                    <a class="btn btn-secondary" href="./patient_logout.php">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -76,7 +76,7 @@ while($row=mysqli_fetch_array($sql))
                         <td><?php echo $row['CreationDate'];?></td>
                         <td><?php echo $row['UpdationDate'];?></td>
                         <td>
-                            <a href="./MedHistory.php?viewid=<?php echo $row['ID'];?>"><i class="fa fa-eye"></i></a>
+                            <a href="./patient_medHistory.php?viewid=<?php echo $row['ID'];?>"><i class="fa fa-eye"></i></a>
                         </td>
                     </tr>
                     <?php 
