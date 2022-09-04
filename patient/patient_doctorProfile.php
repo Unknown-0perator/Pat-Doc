@@ -67,7 +67,7 @@ function count_rate_data($rate_number)
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                    <a class="btn btn-secondary" href="">Logout</a>
+                    <a class="btn btn-secondary" href="./patient_sign_out.php">Logout</a>
                     </div>
                 </li>
             </ul>

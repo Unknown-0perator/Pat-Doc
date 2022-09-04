@@ -51,7 +51,7 @@ exit();
                     <label class="lbl1" for="password"><b>Password</b></label>
                     <input class="inp2" type="password" name="password" id="pass" required>
                 </div>
-                <label class="lbl2"><a href="./ForgotPass.php" class="href1">Forgot your password?</a></label>
+                <label class="lbl2"><a href="./patient_forgetPassword.php" class="href1">Forgot your password?</a></label>
             </fieldset>
             <div class="signin">
                 <button class="btn1" name="submit" type="submit">Sign In</button>

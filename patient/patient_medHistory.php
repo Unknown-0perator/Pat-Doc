@@ -44,19 +44,19 @@ if(isset($_POST['submit']))
 
 <body>
     <!-- Navbar -->
-    <div>
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand h1">PatDoc </span>
+    <div class="cont-1">
+        <nav class="navbar navbar-light bg-light top-nav">
+            <span class="navbar-brand h1 ">PatDoc</span>
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="./patient_dashboard.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Rewards</a>
+                <a class="nav-link" href="">Rewards</a>
                 </li>
                 <li class="nav-item">
-                    <div>
-                    <a class="btn btn-secondary" href="./patient_logout.php">Logout</a>
+                    <div class="dropdown">
+                    <a class="btn btn-secondary" href="./patient_sign_out.php">Logout</a>
                     </div>
                 </li>
             </ul>

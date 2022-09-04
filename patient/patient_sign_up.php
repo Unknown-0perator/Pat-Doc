@@ -71,7 +71,7 @@ if($query)
             </div>
             <hr id="wrapper">
             <div class="target1">
-                <p class="signup">Already have a Account?! <a href="#" class="href2">&nbsp; SignIn</a></p>
+                <p class="signup">Already have a Account?! <a href="./patient_sign_in.php" class="href2">&nbsp; SignIn</a></p>
                 <p class="footer">© PatDoc 2022. All rights reserved</p>
             </div>
         </form>

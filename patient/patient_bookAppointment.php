@@ -121,25 +121,25 @@ function getfee(val) {
 
 <body>
   <!--Navbar-->
-  <div>
-    <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand h1">PatDoc</span>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./Dashboard.php">Dashboard</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Rewards.html">Rewards</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-          <a class="btn btn-secondary" href="./logout.php">Logout</a>
-          </div>
-        </li>
-      </ul>
+  <div class="cont-1">
+        <nav class="navbar navbar-light bg-light top-nav">
+            <span class="navbar-brand h1 ">PatDoc</span>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./patient_dashboard.php">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                    <a class="btn btn-secondary" href="./patient_sign_out.php">Logout</a>
+                    </div>
+                </li>
+            </ul>
 
-    </nav>
-  </div>
+        </nav>
+    </div>
   <!---Body-->
   <div class="container">
   <p class="text-danger"><?php echo htmlentities($_SESSION['msg1']);?>
