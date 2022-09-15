@@ -126,7 +126,7 @@ else{
                   </div>
                 </div>
                 <div class="pa3 pa4-ns dtc-ns v-mid">
-                  <a href="" class="no-underline f6 tc db w-100 pv3 bg-animate bg-blue hover-bg-dark-blue white br2">FAQ Page Here 👉🏻</a>
+                  <a href="patient_FAQ.html" class="no-underline f6 tc db w-100 pv3 bg-animate bg-blue hover-bg-dark-blue white br2">FAQ Page Here 👉🏻</a>
                 </div>
               </div>
             </article>
