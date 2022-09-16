@@ -50,7 +50,7 @@ if($query)
                 </div>
                 <div class="cont2">
                     <label class="lbl" for="usrname">Email</label>
-                    <input class="inp1" type="email" name="email" required id="email">
+                    <input class="inp1" type="email" name="email" required id="email" onBlur="userAvailability()">
                     <span id="user-availability-status1" style="font-size:12px;"></span>
                 </div>
                 <div class="cont2">
@@ -76,6 +76,21 @@ if($query)
             </div>
         </form>
     </main>
+    <script>
+function userAvailability() {
+$("#loaderIcon").show();
+jQuery.ajax({
+url: "patient_checkAvailability.php",
+data:'email='+$("#email").val(),
+type: "POST",
+success:function(data){
+$("#user-availability-status1").html(data);
+$("#loaderIcon").hide();
+},
+error:function (){}
+});
+}
+</script>	
 </body>
 
 </html>
