@@ -12,10 +12,12 @@ $query=mysqli_query($con,"insert into patient_user(fullname,address,gender,email
 if($query)
 {
 	echo "<script>alert('Successfully Registered. You can login now');</script>";
-
+  $point=mysqli_query($con,"INSERT into pacos(patientId,points) values((SELECT id from patient_user where email='$email' && fullname='$fname'),'200')");
+//	header('location:PatLogin.php');
 }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,16 +73,16 @@ if($query)
             </div>
             <hr id="wrapper">
             <div class="target1">
-                <p class="signup">Already have a Account?! <a href="./patient_sign_in.php" class="href2">&nbsp; SignIn</a></p>
+                <p class="signup">Already have a Account?! <a href="./patient_sign_in.php" class="href2">&nbsp; Sign In</a></p>
                 <p class="footer">© PatDoc 2022. All rights reserved</p>
             </div>
         </form>
     </main>
-    <script>
+	<script>
 function userAvailability() {
 $("#loaderIcon").show();
 jQuery.ajax({
-url: "patient_checkAvailability.php",
+url: "doctor_checkAvailability_Patient.php",
 data:'email='+$("#email").val(),
 type: "POST",
 success:function(data){

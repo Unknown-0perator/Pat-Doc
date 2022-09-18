@@ -1,4 +1,6 @@
 <?php
+session_start();
+error_reporting(0);
 include("..\include\config.php");
 if(isset($_POST['submit']))
 {
@@ -6,21 +8,33 @@ $ret=mysqli_query($con,"SELECT * FROM patient_user WHERE email='".$_POST['userna
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {
-$extra="Logged In";
-
+$extra="patient_dashboard.php";
+$_SESSION['login']=$_POST['username'];
+$_SESSION['id']=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
 $uip=$_SERVER['REMOTE_ADDR'];
+$status=1;
+$log=mysqli_query($con,"insert into userlog (uid,username,userip,status) values ('".$_SESSION['id']."','".$_SESSION['login']."','$uip','$status')");
 $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
 header("location:http://$host$uri/$extra");
 exit();
-} else {
-  ?>
-  <script>alert("Wrong password or email")</script>
-  <?php
 }
-
+else
+{
+$_SESSION['login']=$_POST['username'];	
+$uip=$_SERVER['REMOTE_ADDR'];
+$status=0;
+mysqli_query($con,"insert into userlog (username,userip,status) values ('".$_SESSION['login']."','$uip','$status')");
+$_SESSION['errmsg']="Invalid email or password";
+$extra="patient_sign_in.php";
+$host  = $_SERVER['HTTP_HOST'];
+$uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
+header("location:http://$host$uri/$extra");
+exit();
+}
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,17 +57,18 @@ exit();
         <form method="POST" class="form-wrapper">
             <fieldset class="fs-wrapper">
                 <legend class="legend-wrapper">Sign In To Your Account</legend>
-                <div class="cont2">
+                <span style="color:red;"><?php echo $_SESSION['errmsg']; ?><?php echo $_SESSION['errmsg']="";?></span>
+                <div class="cont2 form-group">
                     <label class="lbl1" for="email"><b>Email</b></label>
                     <input class="inp1" type="email" name="username" id="email">
                 </div>
-                <div class="cont3">
+                <div class="cont3 form-actions">
                     <label class="lbl1" for="password"><b>Password</b></label>
-                    <input class="inp2" type="password" name="password" id="pass" required>
+                    <input class="inp2" type="password" name="password" id="password" required>
                 </div>
                 <label class="lbl2"><a href="./patient_forgetPassword.php" class="href1">Forgot your password?</a></label>
             </fieldset>
-            <div class="signin">
+            <div class="signin form-actions">
                 <button class="btn1" name="submit" type="submit">Sign In</button>
             </div>
             <hr id="wrapper">

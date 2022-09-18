@@ -1,7 +1,7 @@
 <?php
 include('..\include\config.php');
-include('.\patient_checkLogin.php');
-check_login();
+// include('.\patient_checkLogin.php');
+// check_login();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@ check_login();
 <header>
         <!--Navbar-->
         <?php
-include_once('patient\patient_navbar.php')
+include_once('.\patient_navbar.php')
 ?>
     </header>
       <!-- Header-->
