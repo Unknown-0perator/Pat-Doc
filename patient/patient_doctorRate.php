@@ -107,25 +107,9 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-<div>
-    <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand h1">PatDoc</span>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./Dashboard.php">Dashboard</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Rewards.html">Rewards</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-          <a class="btn btn-secondary" href="./logout.php">Logout</a>
-          </div>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
+<?php
+include_once('patient\patient_navbar.php')
+?>
 
 <div class="row rating_bar rateClass">
     <div class="col-lg-12">
