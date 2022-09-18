@@ -5,7 +5,7 @@ if(strlen($_SESSION['login'])==0)
 	{	
 		$host = $_SERVER['HTTP_HOST'];
 		$uri  = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-		$extra="./PatLogin.php";		
+		$extra="./patient_sign_in.php";		
 		header("Location: http://$host$uri/$extra");
 	}
 }
