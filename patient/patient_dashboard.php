@@ -30,7 +30,12 @@ include_once('.\patient_navbar.php')
       <!-- Header-->
   <section>
     <div style="padding: 2%; margin-top:15%">
-      <h2 class="text-dark">Welcome <span class="text-primary" id="header"> Unknown-0perator</span></h2>
+      <h2 class="text-dark">Welcome <span class="text-primary" id="header"> <?php $query=mysqli_query($con,"select fullName from patient_user where id='".$_SESSION['id']."'");
+while($row=mysqli_fetch_array($query))
+{
+	$user_name= $row['fullName'];
+  echo strtoupper($user_name);
+}?></span></h2>
     </div>
   </section>
 
