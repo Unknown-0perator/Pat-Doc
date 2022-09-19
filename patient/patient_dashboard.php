@@ -1,7 +1,9 @@
 <?php
+session_start();
+error_reporting(0);
 include('..\include\config.php');
-// include('.\patient_checkLogin.php');
-// check_login();
+include('.\patient_checkLogin.php');
+check_login();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +43,7 @@ include_once('.\patient_navbar.php')
             <div class="card-body">
               <h5 class="card-title">My Appointments &nbsp;&nbsp;<i class="fas fa-book-medical fa-2x"></i></h5>
 
-              <a href="./Appointments.php" class="btn btn-info">Appointment History</a>
+              <a href="./patient_appointment.php" class="btn btn-info">Appointment History</a>
             </div>
           </div>
         </div>
