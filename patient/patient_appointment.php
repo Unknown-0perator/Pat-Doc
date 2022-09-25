@@ -104,7 +104,7 @@ while($row=mysqli_fetch_array($sql))
 		} ?>
 
     </div>		</td>
-                        <td><a href="./DocProfile.php?doctorId=<?php echo $row['doctorId'] ?>&userId=<?php echo $_SESSION['id']?>">Doctor Profile</a></td>
+                        <td><a href="./patient_doctorProfile.php?doctorId=<?php echo $row['doctorId'] ?>&userId=<?php echo $_SESSION['id']?>">Doctor Profile</a></td>
                         <td><?php 
                         if($row['PaymentStatus']==1){
                             echo "Done";
