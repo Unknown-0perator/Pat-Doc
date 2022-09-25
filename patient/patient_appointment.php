@@ -97,7 +97,7 @@ while($row=mysqli_fetch_array($sql))
 { ?>
 
 													
-	<a href="Appointments.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
+	<a href="patient_appointment.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
 	<?php } else {
 
 		echo "Canceled";
