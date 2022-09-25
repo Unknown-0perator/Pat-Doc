@@ -67,8 +67,7 @@ $query=mysqli_query($con,"INSERT into appointment(doctorSpecialization,doctorId,
 
 
   <!-- JQuery CND Links -->
-
-  <script src="../vendor/js/jquery-3.5.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!--Bootstrap CDN link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -94,7 +93,7 @@ status=!status;
 function getdoctor(val) {
 	$.ajax({
 	type: "POST",
-	url: "get_doctor.php",
+	url: "patient_getDoctor.php",
 	data:'specilizationid='+val,
 	success: function(data){
 		$("#doctor").html(data);
@@ -122,7 +121,7 @@ function getfee(val) {
 <body>
   <!--Navbar-->
   <?php
-include_once('patient\patient_navbar.php')
+include_once('.\patient_navbar.php')
 ?>
   <!---Body-->
   <div class="container">

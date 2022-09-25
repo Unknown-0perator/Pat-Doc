@@ -27,7 +27,7 @@ mysqli_query($con,"update appointment set userStatus='0' where id ='".$_GET['id'
 </head>
 <body>
 <?php
-include_once('patient\patient_navbar.php')
+include_once('.\patient_navbar.php')
 ?>
 <section id="page-title">
         <div style="padding: 2%;">
