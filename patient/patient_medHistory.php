@@ -45,7 +45,7 @@ if(isset($_POST['submit']))
 <body>
     <!-- Navbar -->
     <?php
-include_once('patient\patient_navbar.php')
+include_once('.\patient_navbar.php')
 ?>
     <div class="container">
     <?php
