@@ -15,7 +15,7 @@
     <!--Fontawesome CDN link-->
     <script src="https://kit.fontawesome.com/bdcc9ca60b.js" crossorigin="anonymous"></script>
     <!--StyleSheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -40,14 +40,14 @@
     </header>
     <!--About us-->
     <div class="container">
-        <h1>Pat<span class="span-color">ient</span>-Doc<span class="span-color">tor</span></h1>
-        <h3>Who <span class="span-color">We Are?</span></h3>
+        <h1>Pat<span class="highlight">ient</span>-Doc<span class="highlight">tor</span></h1>
+        <h3>Who <span class="highlight">We Are?</span></h3>
         <h5>PatDoc (Appointment Management System) is a web-based application to make your
             Appointments easier and connect the patients with speacilized doctor in less time and accurate timing</h5>
         <h5>PatDoc‘s aim is to bring patients and doctors together by booking appointments online no matter where they
             are, when they need it, or which specialized doctor they want.
         </h5>
-        <h3>Our <span class="span-color">Features</span></h3>
+        <h3>Our <span class="highlight">Features</span></h3>
         <ul>
             <div class="row">
                 <div class="col-md-6">
@@ -98,9 +98,9 @@
     </div>
 
     <!---Footer-->
-    <div style="text-align: center;padding-top: 2%; padding-bottom: 1%;">
-        <span>© PatDoc 2022. All rights reserved</span>
-    </div>
+<?php
+include_once('include/footer.php');
+?>
 </body>
 
 </html>
