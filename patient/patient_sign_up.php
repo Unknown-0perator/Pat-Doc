@@ -26,7 +26,7 @@ if($query)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient | Sign Up</title>
-    <link rel="stylesheet" href="../style_signup.css">
+    <link rel="stylesheet" href="../assets/css/style_signup.css">
 </head>
 
 <body>
@@ -74,7 +74,9 @@ if($query)
             <hr id="wrapper">
             <div class="target1">
                 <p class="signup">Already have a Account?! <a href="./patient_sign_in.php" class="href2">&nbsp; Sign In</a></p>
-                <p class="footer">© PatDoc 2022. All rights reserved</p>
+                <?php
+include_once('../include/footer.php');
+?>
             </div>
         </form>
     </main>

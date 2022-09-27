@@ -36,6 +36,7 @@
         </nav>
     </header>
     <!--About us-->
+    <div>
     <div class="container">
         <h1>Pat<span class="highlight">ient</span>-Doc<span class="highlight">tor</span></h1>
         <h3>Who <span class="highlight">We Are?</span></h3>
