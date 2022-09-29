@@ -207,7 +207,9 @@ while($row=mysqli_fetch_array($ret))
   </div>
   <!---footer-->
   <div class="footer" style="text-align: center;padding-top: 5%; padding-bottom: 1%;">
-    <span style="font-size:1.5em;">© PatDoc 2022. All rights reserved</span>
+  <?php
+include_once('../include/footer.php');
+?>
   </div>
   <script>
 function userAvailability() {

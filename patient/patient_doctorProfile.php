@@ -56,7 +56,7 @@ function count_rate_data($rate_number)
 <body>
       <!-- Top Navbar-->
       <?php
-include_once('patient\patient_navbar.php')
+include_once('.\patient_navbar.php')
 ?>
 <div class="container" id="page-content">
     <div class="padding">

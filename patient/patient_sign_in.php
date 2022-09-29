@@ -76,7 +76,9 @@ exit();
                 <p class="signup">Don't Have An Account Yet?<a href="./patient_sign_up.php" class="href2">&nbsp; Sign
                         up</a>&nbsp; |
                     &nbsp; <a href="../index.html" class="href2">Home </a></p>
-                <p class="footer">© PatDoc 2022. All rights reserved</p>
+                    <?php
+include_once('../include/footer.php');
+?>
             </div>
         </form>
     </main>
