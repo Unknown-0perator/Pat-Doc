@@ -126,5 +126,21 @@ include_once('../include/footer.php');
   </div>
     </div>
 </div>
+<script>
+    function GenerateAvtr(username) 
+{    
+      try 
+      {
+        document.getElementById("avtr").src = `https://avatars.dicebear.com/api/initials/"${username}".svg?backgroundColors=blueGrey&radius=12`;
+      } 
+      catch (error) 
+      {
+        console.error(error);
+      }
+}    
+
+let username = document.getElementById("name").value;
+GenerateAvtr(username);
+</script>
 </body>
 </html>
