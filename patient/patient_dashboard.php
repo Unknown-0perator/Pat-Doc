@@ -93,7 +93,7 @@ while($row=mysqli_fetch_array($query))
             <div class="card-body">
               <h5 class="card-title">My Profile &nbsp;&nbsp;<i class="fas fa-id-badge fa-2x"></i></i></h5>
 
-              <a href="./EditProfile.php" class="btn btn-dark">Update Profile</a>
+              <a href="./patient_editProfile.php" class="btn btn-dark">Update Profile</a>
             </div>
           </div>
         </div>
