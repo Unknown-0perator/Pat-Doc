@@ -84,7 +84,7 @@ while($row=mysqli_fetch_array($query))
             <div class="card-body">
               <h5 class="card-title">Check Drug Interaction &nbsp;&nbsp;<i class="fas fa-capsules fa-2x"></i></h5>
 
-              <a href="DrugInteraction.html" class="btn btn-info">Drug Interaction Checker</a>
+              <a href="patient_drugInteraction.html" class="btn btn-info">Drug Interaction Checker</a>
             </div>
           </div>
         </div>
