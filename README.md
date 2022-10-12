@@ -18,17 +18,11 @@
 
 **⚙️ Technologies Used:**
 
-> **Front-End**: HTML, CSS , JS
-> **Back-End**: PHP
-> **Database**: MySQL
-> **Hosting Platform**: Haven't Hosted yet (Application developed and tested under local server)
+> **Front-End**: HTML, CSS , JS<br> > **Back-End**: PHP<br> > **Database**: MySQL<br> > **Hosting Platform**: Haven't Hosted yet (Application developed and tested under local server)<br>
 
 **⚙️ Features:**
 
-> **Responsive**: This is a responsive website that will be shown prefectly on all size of screens
-> **Rating System**: Patient can rate doctors
-> **Secure**: User's data will be saved encrypted
-> **Redeem System**: There is a point system that users can earn and redeem it
+> **Responsive**: This is a responsive website that will be shown prefectly on all size of screens<br> > **Rating System**: Patient can rate doctors<br> > **Secure**: User's data will be saved encrypted<br> > **Redeem System**: There is a point system that users can earn and redeem it<br>
 
 ---
 
