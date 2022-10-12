@@ -1,4 +1,4 @@
-## PatDoc (🖥 || 📱) ➡️ 🏥
+## Pat-Doc (🖥 || 📱) ➡️ 🏥
 
 <br>
 
@@ -32,4 +32,4 @@
 
 ---
 
-> **Note**: This is full version of the project, but there are some bugs to be fixed.
+> **Note**: This is full version of the project, but there are some bugs to be fixed. Full free to use for learning purpose.
