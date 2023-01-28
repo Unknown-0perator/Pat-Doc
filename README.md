@@ -26,4 +26,4 @@
 
 ---
 
-> **Note**: This is full version of the project, but there are some bugs to be fixed. Full free to use for learning purpose.
+> **Note**: This is full version of the project, but there are some bugs to be fixed. Feel free to use for learning purpose.
